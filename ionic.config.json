@@ -1,0 +1,7 @@
+{
+  "name": "uniAmigapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
