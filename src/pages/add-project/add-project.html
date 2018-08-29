@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>AddProject</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+
+        <ion-item>
+          <ion-label floating>Nombre</ion-label>
+          <ion-input type="text" [(ngModel)]="project.name"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Descripción</ion-label>
+          <ion-textarea type="text" [(ngModel)]="project.description"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Tarea</ion-label>
+          <ion-input type="text" [(ngModel)]="project.task"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Duración</ion-label>
+          <ion-input type="number" [(ngModel)]="project.timeSpend" ></ion-input>
+        </ion-item>
+
+      </ion-list>
+
+      <div text-center>
+        <button ion-button round (click)="addProject()">crear proyecto</button>
+      </div>
+
+</ion-content>
