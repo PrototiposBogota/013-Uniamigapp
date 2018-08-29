@@ -16,7 +16,7 @@ export class AddProjectPage {
   }
 
   /**
-   * 
+   * save project to firebase
    */
   addProject(){
     this.projectService.createProject(this.project);
