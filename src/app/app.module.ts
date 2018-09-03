@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ListProjectsPage } from '../pages/list-projects/list-projects';
 import { AddProjectPage } from '../pages/add-project/add-project';
+import { ShowProjectPage } from '../pages/show-project/show-project';
 
 import { appConfig } from '../config';
 
@@ -28,7 +29,8 @@ import { ProjectService } from '../services/project.services';
     HomePage,
     TabsPage,
     ListProjectsPage,
-    AddProjectPage
+    AddProjectPage,
+    ShowProjectPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { ProjectService } from '../services/project.services';
     HomePage,
     TabsPage,
     ListProjectsPage,
-    AddProjectPage
+    AddProjectPage,
+    ShowProjectPage
   ],
   providers: [
     StatusBar,

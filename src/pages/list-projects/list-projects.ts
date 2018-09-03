@@ -1,3 +1,4 @@
+import { ShowProjectPage } from './../show-project/show-project';
 import { ProjectService } from './../../services/project.services';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -22,5 +23,11 @@ export class ListProjectsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListProjectsPage');
   }
+
+  showProject(projectId){
+    this.navCtrl.push(ShowProjectPage, {projectId: projectId})
+  }
+
+  
 
 }
